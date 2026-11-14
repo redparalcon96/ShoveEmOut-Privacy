@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2a1c38">
+  <meta name="description" content="Privacy Policy for ShoveEmOut, a mobile game developed and published by Redparal.">
+  <title>Privacy Policy | ShoveEmOut</title>
+  <style>
+    :root {
+      --canvas: #f2ebdf;
+      --paper: #fffdf8;
+      --ink: #241b2e;
+      --muted: #6b6074;
+      --purple: #4b2a6b;
+      --purple-deep: #2a1c38;
+      --green: #25633a;
+      --line: #e3d9ca;
+      --line-strong: #cbbba3;
+      --soft: #f8f2e7;
+      --gold: #b98525;
+      --placeholder: #fff0bd;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection {
+      background: #e6d5b8;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--green);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--purple);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #b98525;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 16px;
+      z-index: 20;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--purple-deep);
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .site-header {
+      background: var(--purple-deep);
+      color: #f8f2e7;
+      border-bottom: 4px solid #b98525;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .brand:hover {
+      color: inherit;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      background: #f8f2e7;
+      color: var(--purple-deep);
+      border-radius: 10px;
+      font-size: 1.15rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-copy {
+      display: grid;
+      gap: 1px;
+    }
+
+    .brand-name {
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      color: #cfc2b1;
+      font-size: 0.74rem;
+      line-height: 1.3;
+    }
+
+    .document-label {
+      padding: 6px 11px;
+      border: 1px solid #6e5b81;
+      border-radius: 999px;
+      color: #e5d9c8;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 52px 28px 36px;
+    }
+
+    .document-header {
+      max-width: 820px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--purple-deep);
+      font-size: clamp(2.7rem, 6vw, 4.5rem);
+      font-weight: 750;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+
+    .subtitle {
+      max-width: 640px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+      line-height: 1.6;
+    }
+
+    .doc-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .doc-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .doc-meta span + span::before {
+      width: 3px;
+      height: 3px;
+      background: var(--line-strong);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .summary {
+      max-width: 980px;
+      margin: 30px 0 44px;
+      padding: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(42, 28, 56, 0.05);
+    }
+
+    .summary-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .summary-heading h2 {
+      margin: 0;
+      color: var(--purple-deep);
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+
+    .summary-heading span {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .summary-item {
+      padding: 14px 15px;
+      background: var(--soft);
+      border: 1px solid #eadfce;
+      border-radius: 10px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--purple-deep);
+      font-size: 0.86rem;
+    }
+
+    .summary-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 48px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      padding-top: 4px;
+    }
+
+    .toc-label {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .toc ol {
+      display: grid;
+      gap: 3px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-left: 1px solid var(--line-strong);
+    }
+
+    .toc a {
+      display: block;
+      padding: 5px 0 5px 13px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.35;
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      margin-left: -1px;
+    }
+
+    .toc a:hover {
+      color: var(--purple-deep);
+      border-left-color: var(--green);
+    }
+
+    .toc-contact {
+      margin-top: 24px;
+      padding: 14px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .toc-contact strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--purple-deep);
+      font-size: 0.82rem;
+    }
+
+    .placeholder {
+      display: inline-block;
+      padding: 1px 6px;
+      background: var(--placeholder);
+      border-bottom: 1px solid var(--gold);
+      border-radius: 3px;
+      color: #5c4300;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .policy {
+      min-width: 0;
+    }
+
+    .policy-section {
+      scroll-margin-top: 24px;
+      padding: 0 0 30px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 30px;
+    }
+
+    .policy-section:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 12px;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 0 0 12px;
+      color: var(--purple-deep);
+      font-size: 1.28rem;
+      letter-spacing: -0.018em;
+      line-height: 1.3;
+    }
+
+    .section-index {
+      flex: 0 0 auto;
+      color: var(--green);
+      font-size: 0.72rem;
+      font-variant-numeric: tabular-nums;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin: 0 0 7px;
+      padding-left: 2px;
+    }
+
+    li::marker {
+      color: var(--green);
+    }
+
+    .data-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 22px;
+      margin: 12px 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .data-list li {
+      position: relative;
+      margin: 0;
+      padding-left: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .data-list li::before {
+      position: absolute;
+      top: 0.72em;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      background: var(--green);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .note {
+      margin: 18px 0;
+      padding: 16px 18px;
+      background: var(--soft);
+      border-left: 3px solid var(--green);
+      border-radius: 0 10px 10px 0;
+      color: var(--ink);
+      font-size: 0.93rem;
+    }
+
+    .note strong {
+      color: var(--purple-deep);
+    }
+
+    .contact-card {
+      margin-top: 18px;
+      padding: 20px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .contact-card p {
+      margin: 0 0 5px;
+    }
+
+    .contact-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .back-top {
+      margin-top: 8px;
+      font-size: 0.82rem;
+    }
+
+    .back-top a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .back-top a:hover {
+      color: var(--purple-deep);
+      text-decoration: underline;
+    }
+
+    .site-footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.5;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .layout {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        padding: 16px 18px;
+      }
+
+      .document-label {
+        display: none;
+      }
+
+      .page {
+        padding: 36px 18px 28px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+        padding: 16px 18px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+
+      .toc ol {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border-left: 0;
+        gap: 2px 12px;
+      }
+
+      .toc a {
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      .toc-contact {
+        display: none;
+      }
+
+      .summary {
+        padding: 19px;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 12vw, 3.4rem);
+      }
+
+      .site-footer {
+        display: block;
+        padding: 0 18px 30px;
+      }
+
+      .site-footer p + p {
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .toc ol {
+        grid-template-columns: 1fr;
+      }
+
+      .data-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 11pt;
+      }
+
+      .site-header,
+      .toc,
+      .skip-link,
+      .back-top,
+      .document-label {
+        display: none;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .document-header,
+      .summary,
+      .policy-section {
+        break-inside: avoid;
+      }
+
+      .summary,
+      .contact-card {
+        background: #fff;
+        box-shadow: none;
+      }
+
+      .summary {
+        border-color: #999;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .summary-item {
+        background: #fff;
+        border-color: #bbb;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .placeholder {
+        background: transparent;
+        border-bottom: 1px solid #000;
+      }
+
+      .site-footer {
+        display: block;
+        max-width: none;
+        padding: 18px 0 0;
+        border-top: 1px solid #999;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to policy</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Redparal privacy policy">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-copy">
+          <span class="brand-name">Redparal</span>
+          <span class="brand-subtitle">Developer of ShoveEmOut</span>
+        </span>
+      </a>
+      <span class="document-label">Privacy Policy</span>
+    </div>
+  </header>
+
+  <div class="page" id="top">
+    <header class="document-header">
+      <p class="eyebrow">ShoveEmOut &middot; Android</p>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">How Redparal handles information when you play ShoveEmOut.</p>
+      <div class="doc-meta">
+        <span>Effective <time datetime="2026-11-05">5 November 2026</time></span>
+        <span>Version 1.0</span>
+        <span>Applies to the Android release</span>
+      </div>
+    </header>
+
+    <section class="summary" aria-labelledby="summary-heading">
+      <div class="summary-heading">
+        <h2 id="summary-heading">The short version</h2>
+        <span>Summary</span>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <strong>No account needed</strong>
+          <p>Your progress and purchases are tied to your device and Google Play, not a Redparal account.</p>
+        </div>
+        <div class="summary-item">
+          <strong>Ads and consent</strong>
+          <p>Google AdMob serves ads. Where required, you choose whether ads are personalized.</p>
+        </div>
+        <div class="summary-item">
+          <strong>Declining is allowed</strong>
+          <p>Declining personalized ads does not block gameplay. You may see non-personalized or no ads.</p>
+        </div>
+        <div class="summary-item">
+          <strong>You stay in control</strong>
+          <p>Open Settings &gt; Privacy in the Game to review, change or withdraw your ad choice.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="toc" aria-label="On this page">
+        <p class="toc-label">On this page</p>
+        <nav aria-label="Policy sections">
+          <ol>
+            <li><a href="#scope">Scope and controller</a></li>
+            <li><a href="#device-data">Data on your device</a></li>
+            <li><a href="#advertising">Advertising and consent</a></li>
+            <li><a href="#purchases">Purchases</a></li>
+            <li><a href="#service-providers">Service providers</a></li>
+            <li><a href="#rights">Your choices and rights</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#security">Security and retention</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </nav>
+        <div class="toc-contact">
+          <strong>Privacy question?</strong>
+          <a href="mailto:contactredparal@gmail.com">contactredparal@gmail.com</a>
+        </div>
+      </aside>
+
+      <main class="policy" id="policy">
+        <section class="policy-section" id="scope">
+          <h2><span class="section-index">01</span>Scope and controller</h2>
+          <p>
+            This policy explains what information is used by <strong>ShoveEmOut</strong>
+            (&ldquo;the Game&rdquo;), why it is used, and the choices available to you. It
+            applies to the Android version developed and published by Redparal.
+          </p>
+          <p>
+            For purposes of applicable data protection law, Redparal
+            (&ldquo;Redparal&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is the controller of
+            the processing described in this policy. Google processes data for its own
+            services under Google&rsquo;s privacy policy.
+          </p>
+        </section>
+
+        <section class="policy-section" id="device-data">
+          <h2><span class="section-index">02</span>Data stored on your device</h2>
+          <p>
+            The Game stores progress, coins, unlocked equipment, purchased extra lives,
+            settings and daily-spin state locally on your device. It does not require an
+            account and does not send your local save data to Redparal.
+          </p>
+          <p>
+            You can remove local data by clearing the Game&rsquo;s storage in Android
+            settings or by uninstalling the Game. Uninstalling may permanently remove
+            progress and consumable items. Purchase records remain with Google Play.
+          </p>
+        </section>
+
+        <section class="policy-section" id="advertising">
+          <h2><span class="section-index">03</span>Advertising and consent</h2>
+          <p>
+            The Game uses Google AdMob to show interstitial and rewarded ads. Google and
+            its advertising partners may collect or receive information such as:
+          </p>
+          <ul class="data-list">
+            <li>Device advertising identifiers</li>
+            <li>IP address</li>
+            <li>Approximate location derived from IP</li>
+            <li>Device and app information</li>
+            <li>Ad interactions</li>
+            <li>Diagnostic information</li>
+          </ul>
+          <p>
+            This information is used to deliver and measure ads, prevent fraud, and
+            improve advertising services. Google may process data in countries other
+            than yours under its own safeguards. Redparal does not receive your name,
+            email address or precise location from AdMob.
+          </p>
+          <p>
+            Where required by law, the Game asks for consent through Google&rsquo;s User
+            Messaging Platform (UMP) before using personal data for personalized
+            advertising. You can decline. The Game remains fully playable; you may
+            receive non-personalized ads or no ads, depending on your choice and ad
+            availability. Even when ads are non-personalized, Google may process limited
+            data for ad delivery, fraud prevention, and measurement as described in its
+            policy.
+          </p>
+          <div class="note">
+            <strong>Your choice can change.</strong> Open <strong>Settings &gt; Privacy</strong>
+            in the Game to review, change or withdraw your ad consent. You can also reset
+            or delete your advertising ID and manage ad personalization in Android
+            settings.
+          </div>
+          <p>
+            Google privacy policy:
+            <a href="https://policies.google.com/privacy" rel="noopener noreferrer">policies.google.com/privacy</a>
+            <br>
+            Google partner-sites information:
+            <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">policies.google.com/technologies/partner-sites</a>
+          </p>
+        </section>
+
+        <section class="policy-section" id="purchases">
+          <h2><span class="section-index">04</span>Purchases</h2>
+          <p>
+            In-app purchases are processed by Google Play Billing. Google handles your
+            payment method and billing details; Redparal does not receive your card
+            number or full billing address. Redparal receives the product identifier and
+            purchase confirmation needed to grant coins or extra lives.
+          </p>
+          <p>
+            Refunds and billing disputes are handled under Google Play&rsquo;s policies.
+          </p>
+        </section>
+
+        <section class="policy-section" id="service-providers">
+          <h2><span class="section-index">05</span>Service providers and disclosure</h2>
+          <p>
+            We use Google AdMob and Google Play Billing, which process information under
+            their own privacy policies. We may disclose information if required by law,
+            to protect our rights or the security of the Game, or as part of a business
+            transfer.
+          </p>
+          <p>
+            The Game has no account system, and Redparal does not receive your name or
+            email address from AdMob.
+          </p>
+        </section>
+
+        <section class="policy-section" id="rights">
+          <h2><span class="section-index">06</span>Your choices and rights</h2>
+          <ul>
+            <li>Change or withdraw your ad consent in the Game&rsquo;s Settings &gt; Privacy screen.</li>
+            <li>Reset or delete your advertising ID and manage ad personalization in Android settings.</li>
+            <li>Clear the Game&rsquo;s storage or uninstall it to remove local data.</li>
+            <li>Contact us at <a href="mailto:contactredparal@gmail.com">contactredparal@gmail.com</a> with a privacy question or request.</li>
+          </ul>
+          <p>
+            Depending on where you live, you may have the right to access, correct,
+            delete, restrict or object to processing, and to data portability. You may
+            also lodge a complaint with your local data protection authority. Because the
+            Game has no account, we may not be able to identify you in our systems; we
+            will explain what we can do with the information available.
+          </p>
+        </section>
+
+        <section class="policy-section" id="children">
+          <h2><span class="section-index">07</span>Children</h2>
+          <p>
+            The Game is not directed to children under 13, or the minimum age required in
+            your country. We do not knowingly collect personal information from children.
+            If you believe a child has provided personal information, contact us and we
+            will take appropriate steps.
+          </p>
+        </section>
+
+        <section class="policy-section" id="security">
+          <h2><span class="section-index">08</span>Security and retention</h2>
+          <p>
+            We use reasonable measures to protect information under our control. No
+            method of transmission or storage is completely secure. Local game data
+            remains on your device until you clear the Game&rsquo;s storage or uninstall it.
+            Google retains advertising and purchase data under its own policies. We
+            retain support correspondence only as long as needed to respond and meet
+            legal obligations.
+          </p>
+        </section>
+
+        <section class="policy-section" id="changes">
+          <h2><span class="section-index">09</span>Changes to this policy</h2>
+          <p>
+            We may update this policy when the Game or legal requirements change. We will
+            update the effective date at the top of this page. The current version will
+            remain available at this URL.
+          </p>
+        </section>
+
+        <section class="policy-section" id="contact">
+          <h2><span class="section-index">10</span>Contact</h2>
+          <p>
+            For privacy questions or requests, contact Redparal using the address below.
+          </p>
+          <div class="contact-card">
+            <p><strong>Redparal</strong></p>
+            <p>
+              Email:
+              <a href="mailto:contactredparal@gmail.com">contactredparal@gmail.com</a>
+            </p>
+          </div>
+          <p class="back-top"><a href="#top">&uarr; Back to top</a></p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>ShoveEmOut is developed and published by Redparal.</p>
+    <p>Google Play and AdMob are services of Google LLC. Effective 5 November 2026.</p>
+  </footer>
+</body>
+</html>
